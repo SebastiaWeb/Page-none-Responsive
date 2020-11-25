@@ -1,0 +1,348 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+/* Estilos generales */
+body {
+    background-image: url("../img/paven.png");
+}
+
+@font-face {
+    font-family: "iconos";
+    src: url("../fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format('svg'),
+    url("../fonts/websymbols-regular-webfont.eot");
+    src: url("../fonts/websymbols-regular-webfont.eot?#iefix") format('embedded-opentype'),
+    url("../fonts/websymbols-regular-webfont.woff") format('woff'), 
+    url("../fonts/websymbols-regular-webfont.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.main-aside-form__text, .main-aside-form__password {
+    text-align: center;
+    width: 100%;
+    outline: none;
+    margin-bottom: 5px;
+    transition: all ease 400ms;
+    padding: 1px;
+}
+
+.main-aside-form__text:focus, .main-aside-form__password:focus {
+    background-color: #70b0535e;
+    outline: none;
+    border-radius: 5px;
+}
+/* ---------- */
+
+/* Encabezado */
+
+.main-encabezado {
+    width: 100%;
+    height: 14rem;
+    margin: auto;
+}
+
+.encabezado-banner {
+    display: block;
+    width: 10%;
+    margin: 0 auto;
+}
+
+.encabezado-title {
+    font-weight: 600;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #71B053;
+    text-shadow: 0px 2px 3px #000;
+
+}
+
+/* ------------------- */
+
+/* Menu */
+.main-menu {
+    width: 100%;
+    height: 2.5rem;
+    background-color: #000;
+}
+
+.main-menu__ul {
+    list-style: none;
+    margin: 0 auto;
+    width: 969px;
+}
+
+.main-menu > ul > li {
+    float: left;
+    border-left: 1px solid rgba(255, 255, 255, 0.555);
+    transition: all 600ms;
+}
+
+.main-menu > ul > li:last-child {
+    border-right: 1px solid rgba(255, 255, 255, 0.555);
+} 
+
+
+.main-menu > ul > li > a {
+    display: block;
+    width: 7.5rem;
+    text-align: center;
+    text-decoration: none;
+    line-height: 2.5rem;
+    color: #cccccc;  
+}
+
+.main-menu > ul > li:hover {
+    background-color: #71B053;
+    box-shadow: 0px 0px 3px inset;
+
+}
+
+.main-menu .main-menu__ul > li > ul{
+    list-style: none; 
+}
+
+/* Submenu */
+
+.submenu {
+    background-color: rgb(117, 117, 117);
+    position: absolute;
+    z-index: 10;
+}
+
+.submenu > li {
+    display: none;
+    width: 8rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    transition: all 400ms;
+    line-height: 1.5rem;
+}
+
+.submenu > li:last-child {
+    margin-bottom: 0;
+    
+}
+
+.submenu > li > a {
+    text-decoration: none;
+    color: rgba(228, 231, 230, 0.911);
+    
+}
+
+.main-menu__ul > li:hover > ul > li  {
+    display: block;
+    border-bottom: 1px solid rgb(48, 48, 48);
+}
+.main-menu__ul > li:hover > ul > li:last-child {
+    border-bottom: none;
+}
+
+
+.main-menu__ul > li:hover > ul > li:hover {
+    cursor: pointer;
+    background-color: #71B053;
+    box-shadow: 0px 0px 3px ;
+}
+
+/* Barra lateral */
+
+.main-aside {
+    margin: 2rem;
+    margin-left: 5rem;
+    width: 12rem;
+    background-color: white;
+    box-shadow: 0px 2px 2px;
+    padding: 0.625rem;
+    float: left;
+}
+
+.main-aside > div {
+    margin-bottom: .5rem;
+    border-bottom: 2.5px dotted #ccc;
+    margin-bottom: 0.5rem;
+}
+
+.main-aside-form__title {
+    margin-top: 0.5rem;
+    font-size: 1.05rem;
+    border-bottom: 1.8px solid #DBDCDB;
+    border-top: 1.8px solid #DBDCDB;
+    text-align: center;
+    color: #333333;
+    background-color: #F2F3F2;
+    margin-bottom: 0.9rem;
+}
+
+.main-aside-form__label {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.btn-acceder {
+    display: block;
+    cursor: pointer;
+    padding: 4px;
+    background-color: #5EA11F;
+    border: 1px solid #5EA11F; /*#193301*/
+    border-radius: 4px;
+    box-shadow: 0px 0.7px 2px #5EA11F;
+    color: white;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    transition: all 200ms;
+}
+
+.btn-acceder:hover{
+    color: #5EA11F;
+    background-color: white;
+}
+
+.btn-acceder:active {
+    outline: none;
+    border: 1px solid #5EA11F;
+    box-shadow: 0px 0.7px 2px #5EA11F inset;
+}
+
+/* Enlaces */
+
+.main-aside-form__link {
+    list-style: none;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.main-aside-form__link > li > a {
+    text-decoration: none;
+    color: #5EA11F;
+}
+
+/* Enlaces de interes */
+
+.main-aside-form-link__ul {
+    display: block;
+    width: 100%;
+    list-style: square;
+    padding: 1rem;
+    padding-top: 0rem;
+}
+
+.main-aside-form-link__ul > li > a {
+    text-decoration: none;
+    font-weight: 1rem;
+    color: #5EA11F;
+}
+.clear-float {
+    clear: both;
+}
+/* Frase del dia */
+
+.main-frase-del-dia {
+    position: absolute;
+    margin: 2rem;
+    margin-left: 5rem;
+    width: 12rem;
+    background-color: white;
+    box-shadow: 0px 2px 1px;
+    padding: 0.625rem;
+     bottom: -680px; 
+}
+
+.main-section {
+    margin-top: 2rem;
+    margin-right: 5rem;
+    width: 56rem;
+    float: left;
+    
+}
+.main-section > div {
+    background-color: white;
+    margin-bottom: 1.8rem;
+    box-shadow: 0px 0px 2px black;
+    padding: 1rem;
+    position: relative;
+}
+
+.main-section > div > h2 {
+    border-bottom: 1px solid #E0E0E0;
+    text-align: center;
+    padding: 5px;
+    padding-bottom: 7px;
+    margin-bottom: 5px;
+}
+
+.main-section > div > p {
+    text-justify: auto;
+    margin-top: 1.5rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.15rem;
+}
+
+.main-section > div > p > a {
+    text-decoration: none;
+    color: #5EA11F;
+}
+
+.main-section-scotchOne {
+    position: absolute;
+    top: -19px;
+    left: 10;
+}
+
+.main-section-scotch {
+    position: absolute;
+    top: -19px;
+    right: 0;
+    margin-right: 10px;
+}
+
+.main-section__icon {
+    float: left;
+    font-family: "iconos";
+    margin-right: 5px;
+}
+
+.red {
+    color: #A42422;
+}
+
+
+.blue {
+    color: #0C73F2;
+}
+
+.orange {
+    color: #E2AA2A;
+}
+
+.main-section-fecha {
+    color: #8F808F;
+    font-size: 1rem;
+}
+
+.main-footer {
+    clear: both;
+    width: 100%;
+    background-color: #333333;
+    padding: 0.5rem;
+}
+
+.main-footer > p {
+    color: white;
+    text-align: center;
+}
+
+.main-footer > p >a {
+    color: #5EA11F;
+    text-decoration: none;
+}

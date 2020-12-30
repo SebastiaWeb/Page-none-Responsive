@@ -7,23 +7,21 @@
 
 
 /* Estilos generales */
+
 body {
     background-image: url("../img/paven.png");
 }
 
 @font-face {
     font-family: "iconos";
-    src: url("../fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format('svg'),
-    url("../fonts/websymbols-regular-webfont.eot");
-    src: url("../fonts/websymbols-regular-webfont.eot?#iefix") format('embedded-opentype'),
-    url("../fonts/websymbols-regular-webfont.woff") format('woff'), 
-    url("../fonts/websymbols-regular-webfont.ttf") format('truetype');
+    src: url("../fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format('svg'), url("../fonts/websymbols-regular-webfont.eot");
+    src: url("../fonts/websymbols-regular-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/websymbols-regular-webfont.woff") format('woff'), url("../fonts/websymbols-regular-webfont.ttf") format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
-
-.main-aside-form__text, .main-aside-form__password {
+.main-aside-form__text,
+.main-aside-form__password {
     text-align: center;
     width: 100%;
     outline: none;
@@ -32,12 +30,16 @@ body {
     padding: 1px;
 }
 
-.main-aside-form__text:focus, .main-aside-form__password:focus {
+.main-aside-form__text:focus,
+.main-aside-form__password:focus {
     background-color: #70b0535e;
     outline: none;
     border-radius: 5px;
 }
+
+
 /* ---------- */
+
 
 /* Encabezado */
 
@@ -60,12 +62,14 @@ body {
     text-align: center;
     color: #71B053;
     text-shadow: 0px 2px 3px #000;
-
 }
+
 
 /* ------------------- */
 
+
 /* Menu */
+
 .main-menu {
     width: 100%;
     height: 2.5rem;
@@ -75,38 +79,39 @@ body {
 .main-menu__ul {
     list-style: none;
     margin: 0 auto;
-    width: 969px;
+    width: 72.9%;
 }
 
-.main-menu > ul > li {
+.main-menu>ul>li {
     float: left;
     border-left: 1px solid rgba(255, 255, 255, 0.555);
     transition: all 600ms;
+    padding-left: 3.086%;
+    padding-right: 3.086%;
 }
 
-.main-menu > ul > li:last-child {
+.main-menu>ul>li:last-child {
     border-right: 1px solid rgba(255, 255, 255, 0.555);
-} 
+}
 
-
-.main-menu > ul > li > a {
+.main-menu>ul>li>a {
     display: block;
-    width: 7.5rem;
     text-align: center;
     text-decoration: none;
     line-height: 2.5rem;
-    color: #cccccc;  
+    color: #cccccc;
+    font-size: 15px;
 }
 
-.main-menu > ul > li:hover {
+.main-menu>ul>li:hover {
     background-color: #71B053;
     box-shadow: 0px 0px 3px inset;
-
 }
 
-.main-menu .main-menu__ul > li > ul{
-    list-style: none; 
+.main-menu .main-menu__ul>li>ul {
+    list-style: none;
 }
+
 
 /* Submenu */
 
@@ -116,7 +121,7 @@ body {
     z-index: 10;
 }
 
-.submenu > li {
+.submenu>li {
     display: none;
     width: 8rem;
     padding-top: 5px;
@@ -126,45 +131,44 @@ body {
     line-height: 1.5rem;
 }
 
-.submenu > li:last-child {
+.submenu>li:last-child {
     margin-bottom: 0;
-    
 }
 
-.submenu > li > a {
+.submenu>li>a {
     text-decoration: none;
     color: rgba(228, 231, 230, 0.911);
-    
 }
 
-.main-menu__ul > li:hover > ul > li  {
+.main-menu__ul>li:hover>ul>li {
     display: block;
     border-bottom: 1px solid rgb(48, 48, 48);
 }
-.main-menu__ul > li:hover > ul > li:last-child {
+
+.main-menu__ul>li:hover>ul>li:last-child {
     border-bottom: none;
 }
 
-
-.main-menu__ul > li:hover > ul > li:hover {
+.main-menu__ul>li:hover>ul>li:hover {
     cursor: pointer;
     background-color: #71B053;
-    box-shadow: 0px 0px 3px ;
+    box-shadow: 0px 0px 3px;
 }
+
 
 /* Barra lateral */
 
 .main-aside {
-    margin: 2rem;
-    margin-left: 5rem;
-    width: 12rem;
+    margin: 2.5%;
+    margin-left: 6%;
+    width: 14%;
     background-color: white;
     box-shadow: 0px 2px 2px;
     padding: 0.625rem;
     float: left;
 }
 
-.main-aside > div {
+.main-aside>div {
     margin-bottom: .5rem;
     border-bottom: 2.5px dotted #ccc;
     margin-bottom: 0.5rem;
@@ -192,7 +196,8 @@ body {
     cursor: pointer;
     padding: 4px;
     background-color: #5EA11F;
-    border: 1px solid #5EA11F; /*#193301*/
+    border: 1px solid #5EA11F;
+    /*#193301*/
     border-radius: 4px;
     box-shadow: 0px 0.7px 2px #5EA11F;
     color: white;
@@ -202,7 +207,7 @@ body {
     transition: all 200ms;
 }
 
-.btn-acceder:hover{
+.btn-acceder:hover {
     color: #5EA11F;
     background-color: white;
 }
@@ -213,6 +218,7 @@ body {
     box-shadow: 0px 0.7px 2px #5EA11F inset;
 }
 
+
 /* Enlaces */
 
 .main-aside-form__link {
@@ -221,10 +227,11 @@ body {
     margin-bottom: 10px;
 }
 
-.main-aside-form__link > li > a {
+.main-aside-form__link>li>a {
     text-decoration: none;
     color: #5EA11F;
 }
+
 
 /* Enlaces de interes */
 
@@ -236,35 +243,38 @@ body {
     padding-top: 0rem;
 }
 
-.main-aside-form-link__ul > li > a {
+.main-aside-form-link__ul>li>a {
     text-decoration: none;
     font-weight: 1rem;
     color: #5EA11F;
 }
+
 .clear-float {
     clear: both;
 }
+
+
 /* Frase del dia */
 
 .main-frase-del-dia {
     position: absolute;
-    margin: 2rem;
-    margin-left: 5rem;
-    width: 12rem;
+    margin: -4%;
+    margin-left: 6%;
+    width: 14%;
     background-color: white;
     box-shadow: 0px 2px 1px;
     padding: 0.625rem;
-     bottom: -680px; 
+    bottom: -680px;
 }
 
 .main-section {
-    margin-top: 2rem;
+    margin-top: 2.5%;
     margin-right: 5rem;
-    width: 56rem;
+    width: 70%;
     float: left;
-    
 }
-.main-section > div {
+
+.main-section>div {
     background-color: white;
     margin-bottom: 1.8rem;
     box-shadow: 0px 0px 2px black;
@@ -272,7 +282,7 @@ body {
     position: relative;
 }
 
-.main-section > div > h2 {
+.main-section>div>h2 {
     border-bottom: 1px solid #E0E0E0;
     text-align: center;
     padding: 5px;
@@ -280,7 +290,7 @@ body {
     margin-bottom: 5px;
 }
 
-.main-section > div > p {
+.main-section>div>p {
     text-justify: auto;
     margin-top: 1.5rem;
     padding-left: 10px;
@@ -288,7 +298,7 @@ body {
     font-size: 1.15rem;
 }
 
-.main-section > div > p > a {
+.main-section>div>p>a {
     text-decoration: none;
     color: #5EA11F;
 }
@@ -316,7 +326,6 @@ body {
     color: #A42422;
 }
 
-
 .blue {
     color: #0C73F2;
 }
@@ -337,12 +346,12 @@ body {
     padding: 0.5rem;
 }
 
-.main-footer > p {
+.main-footer>p {
     color: white;
     text-align: center;
 }
 
-.main-footer > p >a {
+.main-footer>p>a {
     color: #5EA11F;
     text-decoration: none;
 }

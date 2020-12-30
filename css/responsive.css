@@ -1,0 +1,181 @@
+@media (max-width: 1346PX) {
+    .main-menu>ul>li {
+        padding-left: 2.9%;
+        padding-right: 3%;
+    }
+    .main-menu>ul>li:last-child {
+        padding-right: 2%;
+    }
+}
+
+@media (max-width: 1280PX) {
+    .main-section {
+        width: 67%;
+    }
+    .main-aside {
+        width: 14%;
+    }
+    .main-frase-del-dia {
+        width: 14%;
+        margin: -5%;
+        margin-left: 6%;
+    }
+    .main-menu>ul>li {
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+    }
+    .main-menu>ul>li:last-child {
+        padding-right: 2%;
+    }
+    .main-menu>ul>li:first-child {
+        padding-left: 2%;
+    }
+}
+
+@media (max-width: 1217px) {
+    .main-frase-del-dia {
+        margin: -10%;
+        margin-top: 13%;
+        margin-left: 6%;
+        width: 15%;
+        bottom: -135%;
+    }
+}
+
+@media (max-width: 1151px) {
+    .main-frase-del-dia {
+        margin: -9%;
+        margin-left: 6%;
+        height: auto;
+    }
+    .main-frase-del-dia {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 1060px) {
+    .main-frase-del-dia {
+        margin: 0%;
+        margin-left: 6%;
+        height: auto;
+    }
+    .main-frase-del-dia {
+        width: 18%;
+        font-size: 14px;
+        bottom: -138%;
+    }
+}
+
+@media (max-width: 931px) {
+    .main-aside {
+        width: 18%;
+    }
+    .main-section {
+        width: 60%;
+    }
+    .main-aside-form__link>li>a {
+        font-size: 14px;
+    }
+    .main-frase-del-dia {
+        width: 18%;
+        bottom: -125%;
+        margin: -4%;
+    }
+}
+
+@media (max-width: 840px) {
+    .main-frase-del-dia {
+        width: 18%;
+        bottom: -147%;
+    }
+}
+
+@media (max-width: 780px) {
+    .main-frase-del-dia {
+        bottom: -150%;
+        font-size: 13.5px;
+    }
+}
+
+@media (max-width: 730px) {
+    .main-aside {
+        width: 25%;
+    }
+    .main-frase-del-dia {
+        width: 25%;
+        bottom: -135%;
+    }
+    .main-section {
+        width: 60%;
+        margin-right: 0;
+    }
+    .main-aside-form__link>li>a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 582px) {
+    .main-aside {
+        width: 25%;
+    }
+    .main-frase-del-dia {
+        width: 25%;
+        bottom: -140%;
+        margin-left: 6%;
+    }
+}
+
+@media (max-width: 575.98px) { 
+    .main-encabezado {
+        height: auto;
+        margin-bottom: 10px;    
+    }
+
+    .encabezado-banner {
+        width: 20%;
+    }
+
+    .main-menu {
+    width: 100%;
+    height: auto;
+    background-color: #000;
+}
+
+    .main-menu__ul {
+        width: 72.9%;
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin: 0 auto;
+    }
+
+    .main-menu > ul > li {
+        float: none;
+        clear: both;
+        border-left: none;
+    }
+
+    .main-menu > ul > li:first-child {
+        padding-left: 0%;
+    }
+
+    .main-menu > ul > li {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+    .main-menu > ul > li > a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        line-height: 0;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+        color: #cccccc;
+        font-size: 20px;
+    }
+
+    .main-menu > ul > li:last-child {
+        border-right: none;
+    }
+}

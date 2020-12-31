@@ -16,9 +16,10 @@ $(document).ready(() => {
             var submenu = $('.submenu-framework')
             var submenuFramework = $('.submenu>li')
 
-            submenu.slideToggle('slow') // Mostramos primero el contenedor de los elementos
+            submenuFramework.css('display', 'block')
 
-            submenuFramework.fadeToggle(800) // Mostrar despues los elementos de ese contenedor
+            submenu.slideToggle('slow') // Mostramos primero el contenedor de los elemento
+            
         })
 
         menuLenguajes.click(() => {
@@ -27,10 +28,9 @@ $(document).ready(() => {
             var submenu = $('.submenu-lenguajes')
             var submenuLenguaje = $('.submenu>li')
 
+            submenuLenguaje.css('display', 'block')
+
             submenu.slideToggle('slow') // Mostramos primero el contenedor de los elementos
-
-            submenuLenguaje.fadeToggle(800) // Mostrar despues los elementos de ese contenedor
-
           
         })
 

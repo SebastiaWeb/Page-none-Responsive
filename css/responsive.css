@@ -131,7 +131,7 @@
 
     .main-encabezado {
         height: auto;
-        margin-bottom: 10px;    
+        margin-bottom: 4%;  
     }
 
     .encabezado-banner {
@@ -172,6 +172,7 @@
         font-size: 30px;
         font-weight: bold;
         background-color: #71b053;
+        display: none;
     }
 
     .main-menu__ul {
@@ -234,6 +235,7 @@
         font-size: 30px;
         align-self: center;
         cursor: pointer;
+        transform: rotate(180deg);
     }
 
     .menu-component{
@@ -277,4 +279,70 @@
         border-bottom: none;
     }
 
+    /* BARRA LATERAL */
+
+    .main-aside {
+        width: 90%;
+        float: none;
+        clear: both;
+        margin: 0;
+        margin-left: 5%; 
+        margin-right: 5%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .main-aside {
+        padding: 2.625%;
+    }
+
+    .main-aside > div {
+        margin-bottom: 0.5%;
+        border-bottom: 1% dotted #ccc;
+        margin-bottom: 0.5%;
+    }
+
+    .main-aside-form__link {
+        list-style: none;
+        margin-top: 0.2%;
+        margin-bottom: 0.5%;
+    }
+
+    .btn-acceder {
+        display: block;
+        padding: 1.5%;
+        background-color: #5EA11F;
+        border: 1px solid #5EA11F;
+        border-radius: 5px;
+        box-shadow: 0px 0.7px 2px #5EA11F;
+        color: white;
+        margin: 0 auto;
+        margin-bottom: 0px;
+        margin-bottom: 2%;
+        font-size: 0.9rem;
+        transition: all 200ms;
+    }
+
+    /* FRASE */
+    .main-frase-del-dia {
+        position: relative;
+        width: 90%;
+        height: auto;
+        float: none;
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 5%;
+        padding: 2.625%;
+        font-size: 16px;
+        bottom: none;
+    }
+
+    /* CONTENIDO */
+
+    .main-section {
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
 }

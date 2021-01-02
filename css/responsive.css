@@ -1,45 +1,83 @@
-@media (max-width: 1346PX) {
-    .main-menu>ul>li {
-        padding-left: 2.9%;
-        padding-right: 3%;
-    }
-    .main-menu>ul>li:last-child {
-        padding-right: 2%;
-    }
-}
-
-@media (max-width: 1280PX) {
+@media (max-width: 1200px){
     .main-section {
-        width: 67%;
+        margin-top: 2.5%;
+        margin-right: 0%;
+        width: 62%;
     }
+
     .main-aside {
-        width: 14%;
-    }
-    .main-frase-del-dia {
-        width: 14%;
-        margin: -5%;
+        margin: 2.5%;
         margin-left: 6%;
+        width: 20%;
+        padding: 0.625%;
     }
-    .main-menu>ul>li {
-        padding-left: 2.5%;
-        padding-right: 2.5%;
+
+    .main-aside > div {
+        margin-bottom: 6.5%;
+        padding: 2%;
     }
-    .main-menu>ul>li:last-child {
-        padding-right: 2%;
+
+    .btn-acceder {
+        margin-bottom: 8%;
+        margin-top: 5%;
     }
-    .main-menu>ul>li:first-child {
-        padding-left: 2%;
+
+    /* FRASE */
+    .main-frase-del-dia {
+        position: absolute;
+        width: 20%;
+        padding: 0.625%;
+        bottom: 0px;
+        margin-top: 0.2%;
+        height: 32%;
     }
 }
 
-@media (max-width: 1151px) {
-    .main-frase-del-dia {
-        margin: -9%;
-        margin-left: 6%;
+@media (max-width: 992px) { 
+   
+    /* MENÚ */
+    .main-menu {
+        width: 100%;
         height: auto;
+        background-color: #000;
     }
-    .main-frase-del-dia {
-        font-size: 14px;
+
+    .main-menu__ul {
+        list-style: none;
+        margin: 0;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .main-menu > ul > li {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    .main-menu__ul > li {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+    .main-frase-del-dia{
+        height: auto;
+        padding: 0.625%;
+        margin: 0;
+        margin-left: 6%;
+        background-color: white;
+        height: 45%;
+        width: 18%;
+        margin-right: 5%;
+    }
+
+    .main-aside {
+        width: 20%;
+    }
+
+    .main-section {
+        width: 62%;
     }
 }
 
@@ -313,16 +351,19 @@
     /* FRASE */
     .main-frase-del-dia {
         position: relative;
-        width: 90%;
         height: auto;
         float: none;
+        width: 84.75%;
+        margin: 0;
         margin-top: 5%;
         margin-left: 5%;
         margin-right: 5%;
-        margin-bottom: 5%;
+        margin-bottom: 2.5%;
+        padding: 0;
         padding: 2.625%;
         font-size: 16px;
-        bottom: none;
+        bottom: 0 !important;
+        top: 0 !important;
     }
 
     /* CONTENIDO */

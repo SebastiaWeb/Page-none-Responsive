@@ -53,6 +53,8 @@ $(document).ready(() => {
 
             
         })
+
+        $('.main-frase-del-dia').css('top', 0+'px')
     }
     /* Fin Animaciones Del Menu */
 
@@ -67,5 +69,18 @@ $(document).ready(() => {
         console.log(heightFrases)
 
         $('.main-frase-del-dia').css('top', (heightFrases-100)+'px')
+    }
+
+
+    if (widthDocument > 768) {
+        var heightHeader = $('.main-encabezado').height()
+        var heightMenu = $('.main-menu').height()
+        var heightAside = $('.main-aside').height()
+
+        var heightFrases = heightHeader + heightMenu + heightAside
+
+        console.log(heightFrases)
+
+        $('.main-frase-del-dia').css('top', (heightFrases+80) + 'px')
     }
 })

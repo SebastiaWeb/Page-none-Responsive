@@ -2,9 +2,9 @@ $(document).ready(() => {
 
     /* Animaciones Del Menu */
 
-    var widthDocument = $(document)
+    var widthDocument = $(document).width()
 
-    if(widthDocument.width() <= 575){
+    if(widthDocument <= 768){
         //Variables que guardaran un elemento del DOM HTML
         var menuFramework = $('.framework')
         var menuLenguajes = $('.lenguajes')
@@ -54,6 +54,18 @@ $(document).ready(() => {
             
         })
     }
-
     /* Fin Animaciones Del Menu */
+
+    if(widthDocument > 575 && widthDocument <= 768){
+        var widthAside = $('.main-aside').width()
+        var heightHeader = $('.main-encabezado').height()
+        var heightMenu = $('.main-menu-movil').height()
+        var heightAside = $('.main-aside').height()
+        
+        var heightFrases = heightHeader + heightMenu + heightAside
+
+        console.log(heightFrases)
+
+        $('.main-frase-del-dia').css('top', (heightFrases-100)+'px')
+    }
 })

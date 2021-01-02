@@ -288,6 +288,12 @@ body {
     bottom: -680px;
 }
 
+.main-frase-del-dia_title{
+    color: red;
+    font-size: 18px;
+    font-weight: bold;
+}
+
 .main-section {
     margin-top: 2.5%;
     margin-right: 5rem;
